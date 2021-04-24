@@ -1,0 +1,245 @@
+html,
+body {
+  height: 100%;
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  background-color: #171919;
+  color: #ffffff;
+  text-transform: uppercase;
+  min-width: 320px;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.main {
+  flex: 1 0 auto;
+}
+.footer {
+  flex: 0 0 auto;
+  text-align: center;
+  padding-top: 285px;
+  padding-bottom: 34px;
+  .btn {
+    span {
+      padding: 17px 17px 15px 17px;
+      &::after {
+        display: none;
+      }
+    }
+  }
+}
+
+.container {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.headline-left {
+  font-size: 22px;
+  line-height: 32px;
+  letter-spacing: 7.33333px;
+  text-transform: uppercase;
+  color: #ffffff;
+  opacity: 0.5;
+  padding-left: 103px;
+  position: relative;
+  display: inline-block;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    height: 1px;
+    width: 80px;
+    background-color: #ffffff;
+  }
+}
+.headline-right {
+  font-size: 22px;
+  line-height: 32px;
+  letter-spacing: 7.33333px;
+  text-transform: uppercase;
+  color: #ffffff;
+  opacity: 0.5;
+  padding-right: 103px;
+  position: relative;
+  display: inline-block;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 0;
+    height: 1px;
+    width: 80px;
+    background-color: #ffffff;
+  }
+}
+
+.title {
+  div {
+    display: inline-block;
+    font-size: 200px;
+    font-weight: 800;
+    color: rgba(#fff, 0.02);
+    position: relative;
+    transform: translateX(-50px);
+  }
+  span {
+    display: inline-block;
+  }
+  h3 {
+    position: absolute;
+    top: 0;
+    right: -5px;
+    color: #ffffff;
+    font-size: 80px;
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 1px;
+      width: 80px;
+      background-color: $green;
+    }
+  }
+}
+.subtitle {
+  display: inline-block;
+  text-align: right;
+  &__head {
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 86px;
+    padding-right: 10px;
+    span {
+      font-weight: 100;
+    }
+  }
+}
+.btn {
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 36px;
+  span {
+    padding: 17px 57px 15px 17px;
+    background-color: $green;
+    display: inline-block;
+    margin-left: 19px;
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 20px;
+      height: 1px;
+      background-color: #fff;
+      top: 50%;
+      left: -10px;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      width: 25px;
+      height: 21px;
+      background-image: url(../images/arrows-right.svg);
+      top: 50%;
+      right: 17px;
+      transform: translateY(-50%);
+    }
+  }
+}
+.descr {
+  display: inline-block;
+  text-align: left;
+  &__head {
+    font-weight: 800;
+    font-size: 40px;
+    span {
+      font-weight: 100;
+    }
+  }
+}
+
+.quantity {
+  display: inline-block;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.quantity input {
+  width: 40px;
+  height: 42px;
+  display: block;
+  border: none;
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 36px;
+  color: #ffffff;
+  background-color: transparent;
+}
+
+.quantity input:focus {
+  outline: 0;
+}
+
+.quantity-nav {
+  float: left;
+  position: static;
+  height: 42px;
+}
+
+.quantity-button {
+  position: relative;
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.quantity-button.quantity-up {
+  position: absolute;
+  top: 60px;
+  right: 0;
+}
+
+.quantity-button.quantity-down {
+  position: absolute;
+  top: 60px;
+  right: 30px;
+}
+
+.star-list {
+  li {
+    display: inline-block;
+    & + li {
+      margin-left: -25px;
+    }
+  }
+}
+.descr__head-shop {
+  max-width: 340px;
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 40px;
+  padding-left: 0;
+  margin-bottom: 47px;
+}
+.descr__head-star {
+  padding-right: 215px;
+}
